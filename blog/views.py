@@ -9,3 +9,7 @@ def index(requset):
 
 def specific(requset):
     return HttpResponse("list1")
+
+def getResponse(requset):
+    userMessage = requset.GET.get('userMessage')
+    return HttpResponse(userMessage)
